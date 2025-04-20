@@ -1,0 +1,390 @@
+/*  Настройки странциы  */
+
+html {
+    height: 100%;
+    font-family: "Montserrat SemiBold";
+    --standart-font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.gradient-background {
+    background: linear-gradient(to right, #b40df6, #6a02fd);
+    heigth: 100%;
+}
+
+.gray-background {
+    background: rgb(237, 238, 240);
+    heigth: 100%;
+}
+
+/*  Контейнеры  */
+
+.outer-center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.outer-center-div-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+}
+
+.outer-div {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.center-div {
+    text-align: center;
+    font-family: "Montserrat SemiBold";
+    padding: 1.5em;
+    border-radius: 40px 40px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vertical-left-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.horizontal-list, .center-horizontal-list, .right-horizontal-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-list {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.center-horizontal-list {
+    justify-content: center;
+    align-items: center;
+}
+
+.right-horizontal-list {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/*  Всякие блоки  */
+
+.white-row {
+    width: 80%;
+}
+
+.white-cloud, .white-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.block-div {
+    margin: 0.5em;
+}
+
+.normal-margin {
+    margin: 1em;
+}
+
+.big-margin {
+    margin: 2em;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.invisible {
+    display: none;
+}
+
+/*  Кнопочки  */
+
+.big-button {
+    width: 200px;
+}
+
+.round-blue-button, .round-white-button, .round-green-button, .round-red-button,
+.round-border-green-button, .round-border-red-button {
+    font-family: "Montserrat SemiBold";
+    border-radius: 20px;
+    border: 0px;
+    font-size: var(--standart-font-size);
+    padding: 0.75em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.round-blue-button {
+    background-color: #2067f5;
+    color: white;
+}
+
+.round-blue-button:hover, .round-blue-button:focus {
+    background-color: #1d4ca9;
+    border: 0px;
+}
+
+.round-white-button {
+    background-color: white;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.round-white-button:hover {
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.27);
+}
+
+.round-green-button {
+    background-color: #13c537;
+    color: white;
+}
+
+.round-green-button:hover {
+    background-color: #10a12d;
+}
+
+.round-red-button {
+    background-color: #f51e3c;
+    color: white;
+}
+
+.round-red-button:hover {
+    background-color: #c51931;
+}
+
+ /* кнопки с покрашенными границами */
+.round-border-green-button {
+    border: 2px solid #13c537;
+    background-color: white;
+    color: black;
+}
+
+.round-border-green-button:hover {
+    background-color: #13c537;
+    color: white;
+}
+
+.round-border-red-button {
+    border: 2px solid #f51e3c;
+    background-color: white;
+    color: black;
+}
+
+.round-border-red-button:hover {
+    background-color: #f51e3c;
+    color: white;
+}
+
+.minimum-padding {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.icon-right, .icon-left {
+    vertical-align: middle;
+}
+
+.icon-left {
+    margin-right: 1em;
+}
+
+.icon-right {
+    margin-left: 1em;
+}
+
+.text-button {
+    vertical-align: middle;
+}
+
+/*  input  */
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+}
+
+.header-input-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+}
+
+.input-label {
+    display: block;
+}
+
+.input-up-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+.round-input {
+    font-family: "Montserrat SemiBold";
+    font-size: var(--standart-font-size);
+    padding: 0.5em;
+    border-radius: 8px;
+    border-width: 1px;
+}
+
+.bottom-input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    margin-left: 1em;
+    font-family: "Montserrat SemiBold";
+    font-size: var(--standart-font-size);
+}
+
+.bottom-input:focus {
+    border-bottom: 1px solid #2067f5;
+}
+
+/*  rating stars  */
+
+.stars {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 50px;
+    color: lightgray;
+}
+
+.star.selected {
+    color: gold;
+}
+
+/*  Текст  */
+
+.error-label {
+    color: red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    margin-left: calc(10% - 1em);
+    margin-right: 0;
+    padding: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    width: calc(80% + 2em);
+}
+
+.text-group {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 0.5em;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.sub-text {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.text-right-margin {
+    margin-right: 2em;
+}
+
+.big-label {
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.long-text {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.symbol {
+    display: inline;
+}
+
+.header-text {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+/*  Перенастройка стандартных элементов  */
+
+form {
+    margin-block-end: 0;
+}
+
+select {
+    font-family: "Montserrat SemiBold";
+    font-size: var(--standart-font-size);
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+option {
+    border-radius: 8px;
+}
